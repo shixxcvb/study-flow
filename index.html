@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyFlow — Student Productivity & Academic Planner</title>
+    <meta name="description" content="A beautiful, interactive student productivity application featuring task management, academic scheduling, Pomodoro focus sessions, and progress analytics. Academic portfolio project for Charlene Calamba." />
+    <meta property="og:title" content="StudyFlow — Student Productivity & Academic Planner" />
+    <meta property="og:description" content="A beautiful, interactive student productivity application featuring task management, academic scheduling, Pomodoro focus sessions, and progress analytics." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238B5CF6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'></path><path d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'></path></svg>">
+    <script>
+      (function() {
+        try {
+          const raw = localStorage.getItem('studyflow_settings_v1');
+          if (raw) {
+            const parsed = JSON.parse(raw);
+            if (parsed && parsed.theme === 'dark') {
+              document.documentElement.classList.add('dark');
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#FAF8FF] dark:bg-[#12111E] text-[#242039] dark:text-[#E8E6F5] antialiased selection:bg-purple-200 dark:selection:bg-purple-900 selection:text-purple-900 dark:selection:text-purple-100 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "name": "StudyFlow - Student Productivity & Academic Planner",
+  "description": "A beautiful, interactive student productivity application featuring task management, academic scheduling, Pomodoro focus sessions, and progress analytics. Academic portfolio project for Charlene Calamba.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
